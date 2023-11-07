@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Modal from '../../utiles/Modal'
 
 export default function Header() {
+  const [modalSate, setModalState] = useState('');
   return (
     <>
     <div className="navbar bg-sky-200">
@@ -9,10 +11,11 @@ export default function Header() {
   </div>
   <div className="flex-none">
     <div>
-        <button className='btn btn-sm btn-primary'>Add Task</button>
+        <button  className='btn btn-sm btn-primary'>Add Task</button>
     </div>
   </div>
 </div>
+  <Modal></Modal>
     </>
   )
 }
