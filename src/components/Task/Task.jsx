@@ -26,7 +26,6 @@ export default function () {
                 <div className='flex flex-col gap-4 py-3'>
                     
                     
-                    
                 </div>
             </div>
             <div className='w-[30%] h-auto'>

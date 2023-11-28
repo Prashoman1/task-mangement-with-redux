@@ -9,12 +9,20 @@ export const itemTaskSlice = createSlice({
   initialState,
   reducers: {
      taskInsrted : (state, {payload}) => {
-        state.task.push(payload);
+       return{
+        ...state,
+        task:[...state.task,{
+          id:payload.id,
+          task:payload.task,
+          status:payload.status,
+          date:payload.date,
+        }]
+       }
      }
   },
 })
 
 
-export const {  } = itemTaskSlice.actions
+export const { taskInsrted } = itemTaskSlice.actions
 
 export default itemTaskSlice.reducer
