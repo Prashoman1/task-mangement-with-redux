@@ -12,7 +12,7 @@ export const itemTaskSlice = createSlice({
        return{
         ...state,
         task:[...state.task,{
-          id:payload.id,
+          id:1,
           task:payload.task,
           status:payload.status,
           date:payload.date,
